@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkwear"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".PedometerActivity"
+    tools:deviceIds="wear">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88323232">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Number of steps"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tx_steps"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="----"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="0dp"
+            android:background="#88323232"
+            android:onClick="onClean"
+            android:text="Clean steps"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
